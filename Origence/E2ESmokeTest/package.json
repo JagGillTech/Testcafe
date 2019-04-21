@@ -1,0 +1,14 @@
+{
+  "name": "e2esmoketest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Index.js",
+  "scripts": {
+    "test": "testcafe chrome e2e.js"
+  },
+  "author": "Jag Gill",
+  "license": "ISC",
+  "dependencies": {
+    "testcafe": "^1.1.3"
+  }
+}
