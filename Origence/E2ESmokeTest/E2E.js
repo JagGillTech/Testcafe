@@ -84,11 +84,13 @@ test("Quick App", async (t) => {
     .click(Selector('#fwkSave'), {
       timeout: 20000
     })
-    .wait(1000)
-    .expect(Selector('#FilesummaryLoanNumber').child(0).getAttribute('href')).contains('LoanView_LoanViewPage')
+    
+    .expect(Selector('#FilesummaryLoanNumber',{timeout:20000}).child(0).getAttribute('href')).contains('LoanView_LoanViewPage')
+  
+    const loannumber1 = Selector('#FilesummaryLoanNumber').child(0).innerText
+  console.log(await loannumber1)
 
-
-    .wait(10000);
+    await t.wait(1000);
 });
 
 
