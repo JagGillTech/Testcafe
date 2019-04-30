@@ -2,13 +2,23 @@
   "name": "e2esmoketest",
   "version": "1.0.0",
   "description": "",
-  "main": "Index.js",
+  "main": "index.js",
   "scripts": {
-    "test": "testcafe chrome e2e.js"
+    "test": "node index.js",
+    "start":"testcafe chrome E2E.js -r spec --debug-on-fail"
+
   },
   "author": "Jag Gill",
   "license": "ISC",
   "dependencies": {
-    "testcafe": "^1.1.3"
+    "ciscospark": "^1.52.0",
+    "request": "^2.88.0",
+    "testcafe": "^1.1.3",
+    "testcafe-reporter-api-reporter": "^2.0.0",
+    "testcafe-reporter-spec": "^2.1.1",
+    "testcafe-reporter-xunit": "^2.1.0"
+  },
+  "devDependencies": {
+    "fs": "0.0.1-security"
   }
 }
