@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "node index.js",
-    "start": "testcafe chrome test.js -r spec --debug-on-fail --skip-js-errors"
+    "start": "testcafe chrome tests -r spec --debug-on-fail --skip-js-errors"
   },
   "author": "",
   "license": "ISC",
