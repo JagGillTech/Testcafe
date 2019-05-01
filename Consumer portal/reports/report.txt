@@ -1,0 +1,9 @@
+ Running tests in:
+ - Chrome 73.0.3683 / Mac OS X 10.14.4
+
+ Consumer Portal
+ ✓ Log into CP and go to first auto loan and click on upload or view
+ documents button
+
+
+ 1 passed (28s)

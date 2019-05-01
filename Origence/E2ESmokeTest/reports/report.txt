@@ -1,4 +1,0 @@
- Running tests in:
- - Chrome 73.0.3683 / Mac OS X 10.14.4
-
- Origence

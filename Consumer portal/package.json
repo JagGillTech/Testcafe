@@ -4,11 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "testcafe chrome test.js"
+    "test": "node index.js",
+    "start": "testcafe chrome test.js -r spec --debug-on-fail --skip-js-errors"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "ciscospark": "^1.52.1",
+    "fs": "0.0.1-security",
     "testcafe": "^1.1.2"
   }
 }

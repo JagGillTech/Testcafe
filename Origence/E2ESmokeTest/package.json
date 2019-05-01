@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "node index.js",
-    "start":"testcafe chrome E2E.js -r spec --debug-on-fail"
-
+    "start": "testcafe chrome E2E.js -r spec --debug-on-fail --skip-js-errors"
   },
   "author": "Jag Gill",
   "license": "ISC",
@@ -20,5 +19,6 @@
   },
   "devDependencies": {
     "fs": "0.0.1-security"
+    
   }
 }
