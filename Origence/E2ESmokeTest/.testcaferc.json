@@ -1,6 +1,7 @@
 {
     "screenshotPath": "/home/user/tests/screenshots/",
     
-        "skipJsErrors": true
+        "skipJsErrors": true,
+        "selectorTimeout": 120000
     
 }

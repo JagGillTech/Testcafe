@@ -4,11 +4,12 @@
   "description": "TestCafee",
   "main": "index.js",
   "scripts": {
-    "test": "testcafe chrome login.js"
+    "test": "node index.js"
   },
   "author": "Jag Gill",
   "license": "ISC",
   "dependencies": {
+    "fs": "0.0.1-security",
     "testcafe": "^1.1.2"
   }
 }

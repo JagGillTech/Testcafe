@@ -4,7 +4,7 @@ import {
   RequestHook,
   xunit
 } from 'testcafe';
-import Page from './page-model';
+import Page from '../POM/page-model';
 
 //import { RequestHook } from 'testcafe';
 const page = new Page();
@@ -17,8 +17,6 @@ const FicoScore = Selector('#PrimaryBorrower_EstimatedFICOScore_EstimatedFICOSco
 const FicoOption = FicoScore.find('option');
 const select = Selector('#Loan_LoanPurpose_LoanPurpose');
 const subordinateFinancing = Selector('#Loan_ExistingLoan_ExistingLoan').parent(0);
-
-
 
 
 
