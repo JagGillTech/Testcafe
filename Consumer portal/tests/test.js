@@ -7,7 +7,7 @@ fixture `Consumer Portal`
 
 const goThereBotton = Selector('.blds-font-size--14').withText('Go');
 const auto = Selector('.blds-font-color--black').withText('Auto');
-const autoGoThereButton = Selector('.blds-font-color--black').withText('Auto Loan').parent(1).find('span').withText('Go There');
+const autoGoThereButton = Selector('.blds-font-color--black',{timeout:50000}).withText('Auto Loan').parent(1).find('span').withText('Go There');
 
 test('Log into CP and go to first auto loan and click on upload button', async t => {
   const approvedAmount = Selector('p').withText('Approved').parent(1).find('p').withText('20,000').exists;
@@ -19,10 +19,7 @@ test('Log into CP and go to first auto loan and click on upload button', async t
     .typeText('#email', 'michaeldorn@mailinator.com')
     .typeText('#password', 'Password1')
     .click('button[type="submit"]')
-    .wait(10000)
-    .click(autoGoThereButton, {
-      timeout: 50000
-    })
+    .click(autoGoThereButton)
   //console.log(await approvedAmount)
   if (await uploadButton.exists) {
     await t.click(Selector('a').withText('Upload'))
