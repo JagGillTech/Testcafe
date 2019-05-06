@@ -1,6 +1,10 @@
 {
+    "speed": 1,
+    "takeScreenshotsOnFails": true,
     "screenshotPath": "/home/user/tests/screenshots/",
-    
-        "skipJsErrors": true
-    
+    "skipJsErrors": true,
+    "pageLoadTimeout": 50000,
+    "selectorTimeout": 30000,
+    "assertionTimeout": 30000,
+    "browsers": [ "chrome:emulation:device=iphone X"]
 }
