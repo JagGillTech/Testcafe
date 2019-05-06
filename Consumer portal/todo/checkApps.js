@@ -2,6 +2,7 @@ import {
   Selector
 } from 'testcafe';
 
+
 fixture `Consumer Portal`
   .page `https://memberportalwebqa4.qa.apps.pcf.nonprod.cudirect.com/user/login`;
 
@@ -26,4 +27,6 @@ test('Log into CP and go to first auto loan and click on upload button', async t
   } else {
     await t.click(Selector('a').withText('View My Documents'))
   }
+
+  
 });

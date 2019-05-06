@@ -11,7 +11,9 @@
   "license": "ISC",
   "dependencies": {
     "ciscospark": "^1.52.1",
+    "doasync": "^2.0.1",
     "fs": "0.0.1-security",
+    "googleapis": "^39.2.0",
     "testcafe": "^1.1.2"
   }
 }

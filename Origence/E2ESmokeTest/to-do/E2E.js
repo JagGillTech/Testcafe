@@ -12,7 +12,7 @@ const page = new Page();
 //var xunit = require(xunit);
 
 fixture `Origence`
-  .page `https://quantumwebdev4.dev.apps.pcf.nonprod.cudirect.com/QLoginPage.aspx`;
+  .page `https://quantumwebqa4.qa.apps.pcf.nonprod.cudirect.com/QLoginPage.aspx`;
 const FicoScore = Selector('#PrimaryBorrower_EstimatedFICOScore_EstimatedFICOScore');
 const FicoOption = FicoScore.find('option');
 const select = Selector('#Loan_LoanPurpose_LoanPurpose');
@@ -20,7 +20,7 @@ const subordinateFinancing = Selector('#Loan_ExistingLoan_ExistingLoan').parent(
 
 
 
-test.skip("Submit Quick App and get loan number", async (t) => {
+test("Submit Quick App and get loan number", async (t) => {
   await t
     .maximizeWindow()
     .setPageLoadTimeout(1000)
@@ -103,7 +103,7 @@ test.skip("Submit Quick App and get loan number", async (t) => {
 });
 
 
-test('Upload file', async t => {
+test.skip('Upload file', async t => {
 
   await t
     .setPageLoadTimeout(300000)

@@ -4,8 +4,5 @@
  Consumer Portal
  ✓ Registration
 
- Consumer Portal
- ✓ Log into CP and go to first auto loan and click on upload button
 
-
- 2 passed (25s)
+ 1 passed (44s)

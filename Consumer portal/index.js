@@ -15,7 +15,7 @@ createTestCafe('localhost', 1337, 1338)
 
         return runner
             .src(['tests'])
-            .browsers(['all'])
+            .browsers(['chrome'])
             .reporter([{name:'spec', output: 'reports/report.txt'}])
             .run();
     })

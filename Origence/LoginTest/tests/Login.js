@@ -52,12 +52,14 @@ test('Login as TransactionManager', async t => {
 test('Login as ClientExperienceManager', async t => {
   await t.useRole(roles.ClientExperienceManager)
 });
+/*
 test('Login as CreditOfficer', async t => {
   await t.useRole(roles.CreditOfficer)
 });
 test('Login as CreditOfficerManager', async t => {
   await t.useRole(roles.CreditOfficerManager)
 });
+*/
 test('Login as Closer', async t => {
   await t.useRole(roles.Closer)
 });

@@ -15,14 +15,14 @@ createTestCafe('localhost', 1337, 1338)
 
         return runner
             .src(['tests'])
-            .browsers(['chrome'])
+            .browsers(['all'])
             .reporter([{name:'spec', output: 'reports/report.txt'}])
             .run();
     })
     .then(failedCount=> {
         console.log('Tests failed: ' + failedCount);
         if(failedCount>0){
-          //sendmessage();
+          sendmessage();
         }
         testcafe.close();
     });
