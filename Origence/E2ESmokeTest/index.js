@@ -6,7 +6,7 @@ var fs = require('fs');
 
 let testcafe = null;
 
-createTestCafe('localhost', 1337, 1338)
+createTestCafe('localhost')
 
 
     .then(tc => {
@@ -24,7 +24,7 @@ createTestCafe('localhost', 1337, 1338)
     }).then(failedCount => {
         console.log('Tests failed: ' + failedCount);
         if (failedCount > 0) {
-            sendmessage();
+            //sendmessage();
         }
         testcafe.close();
     });
